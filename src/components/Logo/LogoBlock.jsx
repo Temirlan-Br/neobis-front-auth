@@ -2,7 +2,7 @@ import './LogoBlock.css';
 import React from 'react';
 import logo from '../../assets/logo.svg';
 
-const Welcome = () => {
+const LogoBlock = () => {
   return (
     <div className="logo__block">
       <img src={logo} alt="" />
@@ -12,4 +12,4 @@ const Welcome = () => {
   );
 };
 
-export default Welcome;
+export default LogoBlock;
