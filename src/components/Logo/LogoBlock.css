@@ -1,0 +1,13 @@
+.logo__block {
+  width: 480px;
+  margin: 80px;
+}
+.logo__title {
+  display: flex;
+  justify-content: center;
+}
+
+.logo__subtitle {
+  display: flex;
+  justify-content: center;
+}
