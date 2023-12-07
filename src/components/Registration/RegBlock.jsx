@@ -38,7 +38,7 @@ const RegBlock = () => {
         </form>
 
         <div className="link-to-log">
-          <Link to={'/main'} className="link-to-log">
+          <Link to={'/'} className="link-to-log">
             У меня есть аккаунт
           </Link>
         </div>
