@@ -1,9 +1,10 @@
 import { React, useState } from 'react';
+import { Link } from 'react-router-dom';
 import publicPassword from '../../assets/eye.png';
 import hiddenPassword from '../../assets/blind.png';
-import './FormBlock.css';
+import './LoginBlock.css';
 
-const FormBlock = () => {
+const LoginBlock = () => {
   const [passwordVisible, setPasswordVisible] = useState(false);
 
   const switchVisibility = () => {
@@ -31,14 +32,16 @@ const FormBlock = () => {
             alt="eye"
           />
         </div>
-        <button className="login__btn">Войти</button>
+        <button className="btn-to-log">Войти</button>
       </form>
 
-      <div className="login__link">
-        <p>У меня еще нет аккаунта</p>
+      <div className="link-to-reg">
+        <Link to={'/login'} className="link-to-reg">
+          У меня еще нет аккаунта
+        </Link>
       </div>
     </div>
   );
 };
 
-export default FormBlock;
+export default LoginBlock;
