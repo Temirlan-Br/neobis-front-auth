@@ -1,13 +1,13 @@
 import React from 'react';
 import LogoBlock from '../../components/Logo/LogoBlock';
 import './Main.css';
-import FormBlock from '../../components/Form/FormBlock';
+import LoginBlock from '../../components/Login/LoginBlock';
 
 const Main = () => {
   return (
     <div className="container">
       <LogoBlock />
-      <FormBlock />
+      <LoginBlock />
     </div>
   );
 };
