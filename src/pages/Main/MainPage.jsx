@@ -1,9 +1,9 @@
 import React from 'react';
 import LogoBlock from '../../components/Logo/LogoBlock';
-import './Main.css';
+import './MainPage.css';
 import LoginBlock from '../../components/Login/LoginBlock';
 
-const Main = () => {
+const MainPage = () => {
   return (
     <div className="container">
       <LogoBlock />
@@ -12,4 +12,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default MainPage;
