@@ -36,7 +36,7 @@ const LoginBlock = () => {
       </form>
 
       <div className="link-to-reg">
-        <Link to={'/login'} className="link-to-reg">
+        <Link to={'/reg'} className="link-to-reg">
           У меня еще нет аккаунта
         </Link>
       </div>

@@ -1,9 +1,9 @@
 import React from 'react';
 import LogoBlock from '../../components/Logo/LogoBlock';
-import './Login.css';
+import './Reg.css';
 import RegBlock from '../../components/Registration/RegBlock';
 
-const Login = () => {
+const Reg = () => {
   return (
     <div className="container">
       <LogoBlock />
@@ -12,4 +12,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Reg;
