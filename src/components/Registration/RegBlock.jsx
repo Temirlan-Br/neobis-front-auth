@@ -16,7 +16,7 @@ const RegBlock = () => {
 
           <input
             type="text"
-            placeholder="Введи туда-сюда логин"
+            placeholder="Придумай логин"
             className="form__input"
           />
           <div className="password__block">
@@ -38,7 +38,7 @@ const RegBlock = () => {
         </form>
 
         <div className="link-to-log">
-          <Link to={'/'} className="link-to-log">
+          <Link to={'/main'} className="link-to-log">
             У меня есть аккаунт
           </Link>
         </div>
