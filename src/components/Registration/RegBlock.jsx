@@ -1,8 +1,21 @@
-import React from 'react';
+import { React, useState } from 'react';
 import { Link } from 'react-router-dom';
+import publicPassword from '../../assets/eye.png';
+import hiddenPassword from '../../assets/blind.png';
 import './RegBlock.css';
 
 const RegBlock = () => {
+  const [passwordVisible, setPasswordVisible] = useState(false);
+  const [passwordVisible2, setPasswordVisible2] = useState(false);
+
+  const switchVisibility = (e) => {
+    if (e.target.id === 'password1') {
+      setPasswordVisible(!passwordVisible);
+    } else if (e.target.id === 'password2') {
+      setPasswordVisible2(!passwordVisible2);
+    }
+  };
+
   return (
     <div>
       <div className="form__block">
@@ -21,16 +34,28 @@ const RegBlock = () => {
           />
           <div className="password__block">
             <input
-              type="password"
+              type={passwordVisible ? 'text' : 'password'}
               placeholder="Создай пароль"
               className="form__input"
+            />
+            <img
+              onClick={switchVisibility}
+              id="password1"
+              src={passwordVisible ? publicPassword : hiddenPassword}
+              alt="eye"
             />
           </div>
           <div className="password__block">
             <input
-              type="password"
+              type={passwordVisible2 ? 'text' : 'password'}
               placeholder="Повтори пароль"
               className="form__input"
+            />
+            <img
+              onClick={switchVisibility}
+              id="password2"
+              src={passwordVisible2 ? publicPassword : hiddenPassword}
+              alt="eye"
             />
           </div>
 
