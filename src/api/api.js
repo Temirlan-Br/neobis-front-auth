@@ -9,7 +9,7 @@ export const register = async (payload) => {
     const response = await instance.post('register/', payload);
     return response;
   } catch (error) {
-    console.log('Login failed', error);
+    console.log('Registration failed', error);
   }
 };
 export const login = async (payload) => {
@@ -21,3 +21,14 @@ export const login = async (payload) => {
     console.log('Login failed', error);
   }
 };
+export const emailSend = async (token) => {
+  try {
+    const response = await instance.get('confirm-email/${token}/');
+    return response;
+  } catch (error) {
+    console.log('Confirmation email failed', error);
+    throw error;
+  }
+};
+
+export default instance;
