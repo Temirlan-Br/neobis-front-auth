@@ -23,7 +23,7 @@ export const login = async (payload) => {
 };
 export const emailSend = async (token) => {
   try {
-    const response = await instance.get('confirm-email/${token}/');
+    const response = await instance.get('confirm-email/{token}/');
     return response;
   } catch (error) {
     console.log('Confirmation email failed', error);
