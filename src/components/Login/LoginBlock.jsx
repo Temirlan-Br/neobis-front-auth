@@ -23,11 +23,11 @@ const LoginBlock = () => {
     login(payload)
       .then((response) => {
         if (response.status === 200) {
-          navigate('/mail');
+          navigate('/welc');
         }
       })
       .catch((error) => {
-        console.log('Ep tvou');
+        console.log(error);
       });
   };
 

@@ -1,4 +1,5 @@
 import { React } from 'react';
+import { Link } from 'react-router-dom';
 import LogoBlock from '../../components/Logo/LogoBlock';
 import './Email.css';
 
@@ -16,7 +17,9 @@ const Email = () => {
             ящик “Спам”
           </p>
           <p className="email__signs">(´｡• ω •｡`)</p>
-          <button className="email__btn">Письмо не пришло</button>
+          <Link to={'/'}>
+            <button className="email__btn">Пройти авторизацию</button>
+          </Link>
         </div>
       </div>
     </div>
