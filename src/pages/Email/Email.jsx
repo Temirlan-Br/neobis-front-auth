@@ -1,9 +1,6 @@
-import { React, useState } from 'react';
-import { Link } from 'react-router-dom';
-
-import './Email.css';
-import { emailSend } from '../../api/api';
+import { React } from 'react';
 import LogoBlock from '../../components/Logo/LogoBlock';
+import './Email.css';
 
 const Email = () => {
   return (
