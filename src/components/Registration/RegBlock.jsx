@@ -23,18 +23,24 @@ const RegBlock = () => {
     }
   };
 
-  const onSubmit = () => {
+  const onSubmit = (e) => {
+    e.preventDefault();
+
     const payload = {
       username: userName,
       email: email,
       password: password,
       password_check: checkPassword,
     };
-    register(payload).then((response) => {
-      if (response.status === 201) {
-        navigate('/mail');
-      }
-    });
+    register(payload)
+      .then((response) => {
+        if (response.status === 201) {
+          navigate('/mail');
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
 
   return (
@@ -89,7 +95,7 @@ const RegBlock = () => {
           </div>
 
           <button onClick={onSubmit} className="btn-to-log">
-            Войти
+            Создать
           </button>
         </div>
 
