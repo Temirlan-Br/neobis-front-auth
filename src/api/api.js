@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const instance = axios.create({
-  baseURL: 'http://161.35.24.60:8000/auth/',
+  baseURL: 'https://www.nataliya-backender.org.kg/auth/',
 });
 
 export const register = async (payload) => {
